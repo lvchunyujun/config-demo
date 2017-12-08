@@ -2,6 +2,9 @@ server:
   port: 8881
 
 spring:
+  client:
+    register-with-eureka: true
+    fetch-registry: false
   application:
     name: spring-cloud-provider-0
   cloud:
