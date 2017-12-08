@@ -1,0 +1,18 @@
+server:
+  port: 8881
+
+spring:
+  application:
+    name: spring-cloud-provider-0
+  cloud:
+    config:
+      label: master
+      profile: dev
+      discovery:
+        enabled: true
+        service-id: config-server
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8686/eureka/

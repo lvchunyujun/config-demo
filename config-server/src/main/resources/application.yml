@@ -1,0 +1,20 @@
+server:
+  port: 8866
+
+spring:
+  application:
+    name: config-server
+  cloud:
+    config:
+      label: master
+      profile: dev
+      server:
+        git:
+          uri: https://github.com/lvchunyujun/spring-cloud-config.git
+          username: 1097957468@qq.com
+          password: xunyu159
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8686/eureka/
